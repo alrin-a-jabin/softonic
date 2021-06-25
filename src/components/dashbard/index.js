@@ -11,7 +11,6 @@ class Dashboard extends Component {
       key: 1,
       tabs: [],
       tableRowData: [],
-      cartCount: 0,
       modal: false,
       firstName: "",
       lastName: "",
@@ -81,14 +80,14 @@ class Dashboard extends Component {
     this.setState({ gender });
   };
   onSubmit = () => {
-    if (this.state.tittle == "" &&
-      this.state.firstName == "" &&
-      this.state.lastName == "" &&
-      this.state.userName == "" &&
-      this.state.password == "" &&
-      this.state.dob == "" &&
-      this.state.phoneNumber == "" &&
-      this.state.gender == null
+    if (this.state.tittle === "" &&
+      this.state.firstName === "" &&
+      this.state.lastName === "" &&
+      this.state.userName === "" &&
+      this.state.password === "" &&
+      this.state.dob === "" &&
+      this.state.phoneNumber === "" &&
+      this.state.gender === null
     ) {
       this.setState({ errorMessage: "Please enter all the fields" })
     } else {
